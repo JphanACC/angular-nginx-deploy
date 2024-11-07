@@ -3,7 +3,7 @@
 env EXTERNAL_API_URL;
 
 server {
-    listen 80;
+    listen 4200;
     server_name localhost;
 
     root /usr/share/nginx/html;

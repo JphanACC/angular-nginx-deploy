@@ -1,0 +1,7 @@
+services:
+  nginx:
+    image: nginx:alpine3.18-slim
+    ports:
+     - "4200:4200"
+    environment:
+       EXTERNAL_API_URL: "https://www.google.com"
