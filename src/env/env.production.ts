@@ -1,7 +1,7 @@
-import { Env } from "./type";
+import { Env } from './type';
 
 const env: Env = {
-  EXTERNAL_API_URL: "https://github.com/env/production",
+  EXTERNAL_API_URL: '/api',
 };
 
 export default env;

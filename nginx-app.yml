@@ -1,7 +1,9 @@
 services:
   nginx:
     image: nginx:alpine3.18-slim
+    volumes:
+      - ./dist/simple-api:/usr/share/nginx/html:ro
+      - ./nginx.conf.template:/etc/nginx/templates/default.conf.template:ro
     ports:
-     - "4200:4200"
-    environment:
-       EXTERNAL_API_URL: "https://www.google.com"
+      - "4200:4200"
+    env_file: config.env
